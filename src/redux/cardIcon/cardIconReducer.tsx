@@ -1,28 +1,28 @@
 import {
-    CAROUSEL_REQ,
-    CAROUSEL_SUCCESS,
-    CAROUSEL_FAIL,
-} from './carouselTypes';
+    CARDICON_REQ,
+    CARDICON_SUCCESS,
+    CARDICON_FAIL,
+} from './cardIconTypes'
 
-const carouselState = {
+const cardIconlState = {
     load: false,
     data: [],
     error: null
 }
 
-const carouselReducer = (state = carouselState, action: any) => {
+const cardIconReducer = (state = cardIconlState, action: any) => {
     switch (action.type) {
-        case CAROUSEL_REQ:
+        case CARDICON_REQ:
             return {
                 ...state,
             }
-        case CAROUSEL_SUCCESS:
+        case CARDICON_SUCCESS:
             return {
-                load: false,
+                load: true,
                 data: action.payload,
                 error: null
             }
-        case CAROUSEL_FAIL:
+        case CARDICON_FAIL:
             return {
                 load: false,
                 data: [],
@@ -33,4 +33,4 @@ const carouselReducer = (state = carouselState, action: any) => {
     }
 }
 
-export default carouselReducer
+export default cardIconReducer
