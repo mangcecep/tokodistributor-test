@@ -1,0 +1,3 @@
+export const CARDICON_REQ = 'CARDICON_REQ';
+export const CARDICON_SUCCESS = 'CARDICON_SUCCESS';
+export const CARDICON_FAIL = 'CARDICON_FAIL';

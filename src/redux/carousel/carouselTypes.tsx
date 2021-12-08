@@ -1,0 +1,3 @@
+export const CAROUSEL_REQ = 'CAROUSEL_REQ';
+export const CAROUSEL_SUCCESS = 'CAROUSEL_SUCCESS';
+export const CAROUSEL_FAIL = 'CAROUSEL_FAIL';
