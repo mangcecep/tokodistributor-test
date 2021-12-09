@@ -62,10 +62,6 @@ const CardProduct = (card: {
     const [loading, setLoading] = React.useState<Boolean>(true);
 
     React.useEffect(() => {
-        card.getProduct();
-    }, []);
-
-    React.useEffect(() => {
         const timeout = setTimeout(() => {
             card.product && card.product.data && setProductState(card.product.data);
             if (productState.length > 0) {
